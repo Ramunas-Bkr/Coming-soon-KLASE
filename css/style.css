@@ -1,0 +1,102 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* normilize.css */
+
+.hero {
+    display: inline-block;
+    width: 100%;
+    background-color: #03a9f5;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+.main-content {
+    display: inline-block;
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    background-color: #03a9f5;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+.small-container {
+    display: inline-block;
+    width: 800px;
+    margin-left: calc( (100% - 800px) / 2);
+}
+
+.container {
+    display: inline-block;
+    width: 1200px;
+    margin-left: calc( (100% - 1200px) / 2);
+}
+        .container > .left > {
+            display: inline-block;
+            width: 50%;
+            float: left;
+            background-color: green;
+        }
+        .container > .right > {
+            display: inline-block;
+            width: 40%;
+            float: left;
+            margin-left: 10%;
+            background-color: blue;
+        }
+
+@media (max-width: 1300px) {
+    .container {
+        width: 900px;
+        margin-left: calc( (100% - 900px) / 2);
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        width: 700px;
+        margin-left: calc( (100% - 700px) / 2);
+    }
+    .small-container {
+        width: 600px;
+        margin-left: calc( (100% - 600px) / 2);
+    .container > .left > {
+        width: 50%;
+        }
+        .container > .right > {
+        float: left;
+        margin-left: 0;
+        margin-top: 60px;
+        }
+}
+@media (max-width: 800px) {
+    .container {
+        width: 500px;
+        margin-left: calc( (100% - 500px) / 2);
+    }
+    .small-container {
+        width: 500px;
+        margin-left: calc( (100% - 500px) / 2);
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .small-container {
+        width: 100%;
+        margin-left: 20px;
+    }
+}
