@@ -4,14 +4,13 @@ body * {
     padding: 0;
     vertical-align: top;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/* normilize.css */
 
 .hero {
     display: inline-block;
     width: 100%;
-    background-color: #03a9f5;
+    background-color: #03A9F5;
     padding-bottom: 20px;
     padding-top: 60px;
 }
@@ -19,7 +18,7 @@ body * {
 .main-content {
     display: inline-block;
     width: 100%;
-    background-color: #ffffff;
+    background-color: white;
     padding-bottom: 60px;
     padding-top: 60px;
 }
@@ -27,76 +26,81 @@ body * {
 footer {
     display: inline-block;
     width: 100%;
-    background-color: #03a9f5;
+    background-color: #03A9F5;
     padding-bottom: 60px;
     padding-top: 20px;
 }
 
 .small-container {
     display: inline-block;
-    width: 800px;
-    margin-left: calc( (100% - 800px) / 2);
+    width: 700px;
+    margin-left: calc( (100% - 700px) / 2 );
+    background-color: red;
 }
 
 .container {
     display: inline-block;
     width: 1200px;
-    margin-left: calc( (100% - 1200px) / 2);
+    margin-left: calc( (100% - 1200px) / 2 );
 }
-        .container > .left > {
-            display: inline-block;
-            width: 50%;
-            float: left;
-            background-color: green;
-        }
-        .container > .right > {
-            display: inline-block;
-            width: 40%;
-            float: left;
-            margin-left: 10%;
-            background-color: blue;
-        }
+    .container > .left {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        background-color: green;
+    }
+    .container > .right {
+        display: inline-block;
+        width: 40%;
+        float: left;
+        margin-left: 10%;
+        background-color: blue;
+    }
 
 @media (max-width: 1300px) {
     .container {
         width: 900px;
-        margin-left: calc( (100% - 900px) / 2);
+        margin-left: calc( (100% - 900px) / 2 );
     }
 }
+
 @media (max-width: 1000px) {
     .container {
         width: 700px;
-        margin-left: calc( (100% - 700px) / 2);
+        margin-left: calc( (100% - 700px) / 2 );
     }
-    .small-container {
-        width: 600px;
-        margin-left: calc( (100% - 600px) / 2);
-    .container > .left > {
-        width: 50%;
-        }
-        .container > .right > {
-        float: left;
+    .container > .left {
+        width: 100%;
+    }
+    .container > .right {
+        width: 100%;
         margin-left: 0;
         margin-top: 60px;
-        }
+    }
 }
+
 @media (max-width: 800px) {
-    .container {
-        width: 500px;
-        margin-left: calc( (100% - 500px) / 2);
-    }
     .small-container {
         width: 500px;
-        margin-left: calc( (100% - 500px) / 2);
+        margin-left: calc( (100% - 500px) / 2 );
+        background-color: lime;
+    }
+    .container {
+        width: 500px;
+        margin-left: calc( (100% - 500px) / 2 );
     }
 }
+
 @media (max-width: 600px) {
-    .container {
-        width: 100%;
-        margin-left: 20px;
-    }
     .small-container {
-        width: 100%;
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        background-color: lime;
+    }
+    .container {
+        width: calc(100% - 40px);
         margin-left: 20px;
     }
 }
+
+
