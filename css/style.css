@@ -84,7 +84,22 @@ footer {
     background-color: #03A9F5;
     padding-bottom: 60px;
     padding-top: 20px;
+    text-align: center;
 }
+    footer .fa{
+        display: inline-block;
+        width: 40px;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+    }
+        footer .fa:hover{
+            background-color: red;
+            color: #fff;
+            border-radius: 50%;
+        }
 
 .small-container {
     display: inline-block;
