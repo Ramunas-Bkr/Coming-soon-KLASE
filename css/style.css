@@ -10,6 +10,7 @@ body * {
 .hero {
     display: inline-block;
     width: 100%;
+    /*background-image: url(../img/);*/
     background-color: #03A9F5;
     padding-bottom: 20px;
     padding-top: 60px;
@@ -91,6 +92,7 @@ footer {
     footer > .container:nth-child(1){
         border-bottom: 1px solid #fff;
         margin-bottom: 20px;
+        position: relative;
     }
     footer .fa{
         display: inline-block;
@@ -100,12 +102,23 @@ footer {
         padding: 10px;
         margin: 10px;
         text-decoration: none;
+        border-radius: 50%; 
     }
-        footer .fa:hover{
+        footer .fa:hover,{
             background-color: red;
             color: #fff;
-            border-radius: 50%;
         }
+        footer .fa-angle-up{
+            background-color: red;
+            color: #fff;
+            position: absolute;
+            top: -50px;
+            right: -22px;
+            box-shadow: 0 1px 2px #0008;
+        }
+html {
+    scroll-behavior: smooth;
+}
     footer img {
         display: inline-block;
         margin-bottom: 20px;
@@ -125,6 +138,7 @@ footer {
     footer p {
         display: inline-block;
         width: 60%;
+        margin-top: 20px;
     }
     footer a {
         color: #fff;
@@ -191,18 +205,22 @@ footer {
         width: 100%;
     }
         footer .info > div:nth-child(2) {
-        border: none;
+            margin: 0 0 15 0;
+            border: none;
     }
 }
 @media (max-width: 600px) {
     .small-container {
         width: calc(100% - 40px);
-        margin-left: 20px;
+        margin: 0 20px;
         background-color: lime;
     }
     .container {
         width: calc(100% - 40px);
-        margin-left: 20px;
+        margin: 0 20px;
+    }
+    footer .fa-angle-up{
+        display: none;
     }
 }
 
