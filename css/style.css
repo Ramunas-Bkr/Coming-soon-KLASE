@@ -12,8 +12,11 @@ html {
 .hero {
     display: inline-block;
     width: 100%;
-    /*background-image: url(../img/);*/
+    min-height: 100vh;
     background-color: #03A9F5;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
     padding-bottom: 20px;
     padding-top: 60px;
     text-align: center;
