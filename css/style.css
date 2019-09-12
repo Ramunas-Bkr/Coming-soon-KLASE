@@ -55,18 +55,6 @@ html {
             padding: 0 5%;
             margin-bottom: 20px;
         }
-           .hero form > input {
-                display: inline-block;
-                width: 80%;
-                height: 30px;
-                background-color: transparent;
-                border: none;
-                border-bottom: 1px solid #fff;
-            }
-                ::placeholder {
-                    color: #fff;
-                    font-size: 15px;
-                }
         .hero .mouse {
             display: inline-block;
         }

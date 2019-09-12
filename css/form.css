@@ -1,9 +1,9 @@
-form {
+main {
     display: inline-block;
     width: 100%;
 
 }
-    form input {
+    main input {
         display: inline-block;
         width: calc(50% - 20px);
         float: left;
@@ -18,11 +18,23 @@ form {
         input::placeholder {
             color: grey;
         }
+.hero form > input {
+    display: inline-block;
+    width: 80%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+    ::placeholder {
+        color: #fff;
+        font-size: 15px;
+        }
 
-        form input:nth-child(2) {
+        main input:nth-child(2) {
             margin-left: 40px;
         }
-    form textarea {
+    main textarea {
         display: inline-block;
         width: 100%;
         resize: vertical;
@@ -42,10 +54,10 @@ form {
         }
 
 @media (max-width: 600px) {
-    form input {
+    main input {
         width: 100%;
     }
-    form input:nth-child(2) {
+    main input:nth-child(2) {
         margin-left: 0;
         }
 }
